@@ -85,9 +85,18 @@ if 'eggs' in cart or 'rice' in cart:
     print("Free spoon included!")
 
 gift = False
-for i in range(len(cart)):
-    if cart[i] == 'bread' or cart[i] == 'milk' or cart[i] == 'eggs' or cart[i] == 'rice':
-        gift = True
+
+if 'bread' in cart:
+    gift = True
+elif 'milk' in cart:
+    gift = True
+elif 'eggs' in cart:
+    gift = True
+elif 'rice' in cart:
+    gift = True
+
+if not gift:
+    print("No free gift")
 
 if not gift:
     print("No free gift")
