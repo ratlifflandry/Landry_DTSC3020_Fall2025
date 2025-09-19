@@ -109,11 +109,10 @@ print(f"Total Fee: ${total_fee}")
 order = 'salad'
 menu = ['pizza', 'salad', 'sandwich']
 
-for x in menu:
-    if order == x:
-        print(f"{x} is on the menu.")
-    else:
-        print(f"{x} is not on the menu.")
+if order in menu:
+    print(f"{order.title()} is on the menu.")
+else:
+    print(f"{order.title()} is not on the menu.")
 
 ### Question 6 – Job Application Filter
 # Write a Python code that checks if a person is eligible for a job.
