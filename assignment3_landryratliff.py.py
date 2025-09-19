@@ -92,9 +92,9 @@ total_fee = 0
 if 0 <= hours <= 2:
     total_fee = 0
 elif 3 <= hours <= 5:
-    total_fee = 3 * hours
+    total_fee = 3 * (hours - 2) #free hours
 elif hours > 5:
-    total_fee = 5 * (hours - 5) + 9
+    total_fee = 5 * (hours - 5) + 9 #free hours
 
 print(f"Total Hours: {hours} hrs")
 print(f"Total Fee: ${total_fee}")
